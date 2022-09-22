@@ -1,4 +1,13 @@
-body {
-  color: yellow;
-  display: flex;
+* {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  color: #323232;
+}
+a {
+  text-decoration: none;
 }

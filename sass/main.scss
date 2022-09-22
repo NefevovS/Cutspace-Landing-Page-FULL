@@ -1,1 +1,13 @@
 @import "../sass/reset";
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 165px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "../sass/blocks/header";
+@import "../sass/blocks/find";

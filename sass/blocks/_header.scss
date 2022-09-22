@@ -1,0 +1,40 @@
+.header__row {
+  padding-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+}
+.logo-img {
+}
+.logo-name {
+  margin-left: 14px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: (36/24);
+}
+.navlist ul {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 42px;
+}
+.navlist ul li {
+  list-style-type: none;
+}
+.navlist ul li a {
+  transition: 0.3s all ease-in;
+  &:hover {
+    color: rgba(50, 50, 50, 0.425);
+  }
+}
+.active {
+  font-weight: 700;
+  color: #f78434;
+  transition: 0.3s all ease-in;
+  &:hover {
+    color: #dd772e;
+  }
+}

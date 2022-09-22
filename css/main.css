@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  color: #323232;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 165px;
+}
+
+.header__row {
+  padding-top: 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-name {
+  margin-left: 14px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.navlist ul {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+}
+
+.navlist ul li {
+  list-style-type: none;
+}
+
+.navlist ul li a {
+  transition: 0.3s all ease-in;
+}
+.navlist ul li a:hover {
+  color: rgba(50, 50, 50, 0.425);
+}
+
+.active {
+  font-weight: 700;
+  color: #f78434;
+  transition: 0.3s all ease-in;
+}
+.active:hover {
+  color: #dd772e;
+}
+
+.find {
+  margin-top: 44px;
+}
+
+.find__row {
+  display: flex;
+}
+
+.find__textContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.find__header {
+  margin-top: 127px;
+  margin-right: -240px;
+  z-index: 2;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1.46;
+  letter-spacing: 0.8px;
+}
+
+.find__text {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.69;
+  letter-spacing: 1.15px;
+}
+
+.find__form {
+  margin-top: 42px;
+  position: relative;
+}
+.find__form::after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 29px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 19px;
+  z-index: 2;
+  background-image: url(/img/logo/mail.svg);
+}
+
+.find__form-input {
+  width: 459px;
+  height: 58px;
+  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  border-radius: 29px;
+  border-color: transparent;
+  padding: 16px 72px;
+  transition: 0.3s ease-in all;
+}
+.find__form-input:focus {
+  box-shadow: 0px 17px 42px rgba(247, 133, 52, 0.959);
+  outline: 0;
+}
+
+.find__form-submit {
+  position: absolute;
+  right: 0%;
+  width: 157px;
+  height: 58px;
+  border-radius: 29px;
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: rgb(247, 132, 52);
+}
+
+.header-img {
+  height: 676px;
+  width: 540px;
+  margin-left: 103px;
+}
+
+.logo__row {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding-bottom: 91px;
+}/*# sourceMappingURL=main.css.map */
