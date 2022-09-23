@@ -19,10 +19,12 @@
 .navlist ul {
   display: flex;
   justify-content: space-between;
-  column-gap: 42px;
 }
 .navlist ul li {
   list-style-type: none;
+}
+.navlist ul li + li {
+  padding-left: 42px;
 }
 .navlist ul li a {
   transition: 0.3s all ease-in;

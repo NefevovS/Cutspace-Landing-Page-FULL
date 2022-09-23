@@ -33,9 +33,10 @@
   position: relative;
   &::after {
     content: "";
+    display: block;
     position: absolute;
     left: 28px;
-    top: 29px;
+    top: 20px;
     transform: translateY(-50%);
     width: 24px;
     height: 19px;
@@ -57,7 +58,7 @@
     outline: 0;
   }
 }
-.find__form-submit {
+.btn {
   position: absolute;
   right: 0%;
   width: 157px;

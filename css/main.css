@@ -21,7 +21,12 @@ a {
 
 .container {
   max-width: 1110px;
-  margin: 0 165px;
+  margin: 0 auto;
+}
+
+.container--wide {
+  max-width: unset;
+  width: 100%;
 }
 
 .header__row {
@@ -45,12 +50,14 @@ a {
 .navlist ul {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 42px;
-       column-gap: 42px;
 }
 
 .navlist ul li {
   list-style-type: none;
+}
+
+.navlist ul li + li {
+  padding-left: 42px;
 }
 
 .navlist ul li a {
@@ -106,9 +113,10 @@ a {
 }
 .find__form::after {
   content: "";
+  display: block;
   position: absolute;
   left: 28px;
-  top: 29px;
+  top: 20px;
   transform: translateY(-50%);
   width: 24px;
   height: 19px;
@@ -130,7 +138,7 @@ a {
   outline: 0;
 }
 
-.find__form-submit {
+.btn {
   position: absolute;
   right: 0%;
   width: 157px;
@@ -160,6 +168,7 @@ a {
 
 .weProvide-row {
   display: flex;
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -167,8 +176,6 @@ a {
   display: flex;
   -moz-column-gap: 32px;
        column-gap: 32px;
-  position: absolute;
-  left: -71px;
 }
 
 .image_1 {
@@ -182,7 +189,13 @@ a {
 .weProvideText {
   display: flex;
   flex-direction: column;
-  padding-left: 895px;
+  flex-shrink: 0;
+  width: 374px;
+  margin-left: 181px;
+  margin-right: 170px;
+}
+.weProvideText > p + p {
+  margin-top: 20px;
 }
 
 .weProvide__Title {
@@ -190,6 +203,7 @@ a {
   font-size: 42px;
   line-height: 1.48;
   letter-spacing: 0.8px;
+  margin-bottom: 20px;
 }
 
 .weProvide__Text {
@@ -211,4 +225,27 @@ a {
   height: 58px;
   border-radius: 29px;
   padding: 18px 39px;
+  margin-top: 40px;
+}
+
+.card__info {
+  max-width: 300px;
+  position: absolute;
+  right: 662px;
+  top: 332px;
+  z-index: 3;
+}
+
+.card__info--row {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 300px;
+  height: 141px;
+  padding: 30px 29px;
+  border-radius: 15px;
+}
+
+.card__info--text {
+  padding-left: 20px;
 }/*# sourceMappingURL=main.css.map */

@@ -5,7 +5,11 @@
 
 .container {
   max-width: 1110px;
-  margin: 0 165px;
+  margin: 0 auto;
+}
+.container--wide {
+  max-width: unset;
+  width: 100%;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
