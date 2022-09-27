@@ -248,4 +248,91 @@ a {
 
 .card__info--text {
   padding-left: 20px;
+}
+
+.startUsing {
+  margin-top: 153px;
+}
+
+.startUsingRow {
+  display: flex;
+  background-color: #58bebf;
+  border-radius: 20px;
+  height: 464px;
+  -moz-column-gap: 96px;
+       column-gap: 96px;
+}
+
+.startUsingImg {
+  padding-top: 59px;
+  padding-right: 96px;
+  overflow: hidden;
+}
+
+.statUsingContent {
+  margin-right: 117px;
+  margin-top: 92px;
+  width: 342px;
+}
+
+.startUsingTitle {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.48;
+  letter-spacing: 0.8px;
+  margin-bottom: 16px;
+}
+
+.startUsingText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.69;
+  letter-spacing: 1.15px;
+  margin-bottom: 29px;
+}
+
+.containerBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 364px;
+  height: 58px;
+  align-items: flex-start;
+}
+
+.contactUsBtn {
+  width: 172px;
+  height: 58px;
+  background-color: #f78434;
+  border-radius: 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #ffffff;
+  padding: 18px 39px;
+}
+
+.watchNowBtn {
+  position: relative;
+  width: 172px;
+  height: 58px;
+  background-color: #ffffff;
+  border-radius: 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 18px 29px;
+  padding-left: 49px;
+  color: #323232;
+}
+.watchNowBtn::before {
+  content: "";
+  background-image: url(/img/logo/play.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 36px;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=main.css.map */
