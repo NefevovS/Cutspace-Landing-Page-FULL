@@ -255,12 +255,14 @@ a {
 }
 
 .startUsingRow {
+  position: relative;
   display: flex;
   background-color: #58bebf;
   border-radius: 20px;
   height: 464px;
   -moz-column-gap: 96px;
        column-gap: 96px;
+  z-index: -50;
 }
 
 .startUsingImg {
@@ -281,6 +283,7 @@ a {
   line-height: 1.48;
   letter-spacing: 0.8px;
   margin-bottom: 16px;
+  color: white;
 }
 
 .startUsingText {
@@ -289,6 +292,7 @@ a {
   line-height: 1.69;
   letter-spacing: 1.15px;
   margin-bottom: 29px;
+  color: white;
 }
 
 .containerBtn {
@@ -335,4 +339,19 @@ a {
   top: 50%;
   left: 36px;
   transform: translate(-50%, -50%);
+}
+
+.pacman1 {
+  position: absolute;
+  right: -80px;
+  top: -102px;
+  z-index: -20;
+}
+
+.oval {
+  position: absolute;
+  left: 50%;
+  top: 312px;
+  transform: translateX(-50%);
+  z-index: -20;
 }/*# sourceMappingURL=main.css.map */

@@ -3,11 +3,13 @@
 }
 
 .startUsingRow {
+  position: relative;
   display: flex;
   background-color: #58bebf;
   border-radius: 20px;
   height: 464px;
   column-gap: 96px;
+  z-index: -50;
 }
 .startUsingImg {
   padding-top: 59px;
@@ -26,6 +28,7 @@
   line-height: 1.48;
   letter-spacing: 0.8px;
   margin-bottom: 16px;
+  color: white;
 }
 .startUsingText {
   font-weight: 400;
@@ -33,6 +36,7 @@
   line-height: 1.69;
   letter-spacing: 1.15px;
   margin-bottom: 29px;
+  color: white;
 }
 .containerBtn {
   display: flex;
@@ -76,4 +80,17 @@
     left: 36px;
     transform: translate(-50%, -50%);
   }
+}
+.pacman1 {
+  position: absolute;
+  right: -80px;
+  top: -102px;
+  z-index: -20;
+}
+.oval {
+  position: absolute;
+  left: 50%;
+  top: 312px;
+  transform: translateX(-50%);
+  z-index: -20;
 }
