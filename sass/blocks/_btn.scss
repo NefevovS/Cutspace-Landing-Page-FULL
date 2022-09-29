@@ -1,0 +1,41 @@
+.btn {
+  display: inline-block;
+  width: 172px;
+  height: 58px;
+  background-color: #f78434;
+  border-radius: 29px;
+  padding: 18px 40px;
+  font-size: 16px;
+  line-height: 1.4;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: (24/16) px;
+  color: #ffffff;
+}
+
+.btnWhite {
+  position: relative;
+  background-color: white;
+  color: #323232;
+  padding-left: 49px;
+  padding-right: 29px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url(/img/logo/play.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.btnAbs {
+  position: absolute;
+  right: 0;
+  border: none;
+  z-index: 250;
+}

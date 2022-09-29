@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header none">
       <div class="container">
         <div class="header__row">
           <div class="logo">
@@ -30,7 +30,7 @@
       </div>
     </header>
 
-    <section class="find">
+    <section class="find none">
       <div class="container">
         <div class="find__row">
           <div class="find__textContent">
@@ -47,7 +47,8 @@
                 class="find__form-input"
                 placeholder="Your email address"
               />
-              <button type="submit" class="btn">Subscribe</button>
+
+              <button type="submit" class="btn btnAbs">Subscribe</button>
             </form>
           </div>
           <img src="/img/header-img.jpg" class="header-img" alt="header-img" />
@@ -61,7 +62,7 @@
       </div>
     </section>
 
-    <section class="weProvide">
+    <section class="weProvide none">
       <div class="container container--wide">
         <div class="weProvide-row">
           <div class="weProvide__images">
@@ -94,16 +95,9 @@
         </div>
       </div>
     </section>
-    <section class="startUsing">
+    <section class="startUsing none">
       <div class="container">
         <div class="startUsingRow">
-          <img
-            src="/img/testimonials/Design element.svg"
-            alt="pacman1"
-            class="pacman1"
-          />
-          <img src="/img/testimonials/Oval.svg" alt="Oval" class="oval" />
-
           <div class="startUsingImg">
             <img
               src="/img/Dashboard (On my profile soon).jpg"
@@ -116,9 +110,45 @@
               Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex
             </div>
             <div class="containerBtn">
-              <a href="#!" class="contactUsBtn">Contact Us</a>
-              <a href="#!" class="watchNowBtn">Watch now</a>
+              <a href="#!" class="btn">Contact Us</a>
+              <a href="#!" class="btn btnWhite">Watch now</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="whoDo">
+      <div class="container">
+        <div class="whoDo__head">
+          <h3 class="whoDo__title">Who do we serve?</h3>
+          <div class="whoDo__text">
+            Every buyer and seller of tech and services in the world.
+          </div>
+        </div>
+        <div class="whoDo__select--row">
+          <div class="Buyers">
+            <input type="radio" class="buyersSelect" />
+            <div class="selectImg">
+              <img src="/img/logo/Buyers.svg" alt="Buyers" />
+            </div>
+            <div class="selectTitle">Buyers</div>
+            <div class="selectText">
+              Torquem detraxit hosti et quidem se texit, ne ad eam.
+            </div>
+            <a href="#!" class="selectBtn">Get Started</a>
+          </div>
+
+          <div class="Buyers">
+            <input type="radio" class="buyersSelect" />
+            <div class="selectImg">
+              <img src="/img/logo/Seller.svg" alt="Buyers" />
+            </div>
+            <div class="selectTitle">Buyers</div>
+            <div class="selectText">
+              Torquem detraxit hosti et quidem se texit, ne ad eam.
+            </div>
+            <a href="#!" class="selectBtn">Get Started</a>
           </div>
         </div>
       </div>

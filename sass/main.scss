@@ -11,9 +11,13 @@
   max-width: unset;
   width: 100%;
 }
-
+.none {
+  display: none;
+}
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import "../sass/blocks/header";
 @import "../sass/blocks/find";
 @import "../sass/blocks/weProvide";
 @import "../sass/blocks/startUsing";
+@import "../sass/blocks/btn";
+@import "../sass/blocks/whoDo";
