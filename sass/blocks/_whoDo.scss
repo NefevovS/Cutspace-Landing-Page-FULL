@@ -1,7 +1,16 @@
 .whoDo {
-}
-.buyersSelect {
-  display: none;
+  padding-top: 0;
+  padding-bottom: 50px;
+  position: relative;
+  &::before {
+    content: "";
+    z-index: -2;
+    position: absolute;
+    background-color: #f5f6fa;
+    top: -100%;
+    width: 100%;
+    height: 160%;
+  }
 }
 
 .whoDo__head {
@@ -28,49 +37,64 @@
   width: 1110px;
   display: flex;
   column-gap: 30px;
+  justify-content: stretch;
 }
-.Buyers {
+
+.whoDo__card {
   display: flex;
   flex-direction: column;
-  width: 540px;
-  height: 385px;
   align-items: center;
+  width: 540px;
+  height: 365px;
+  padding: 40px 88px;
+  text-align: center;
   border-radius: 10px;
-  background-color: #f78434;
+  background-color: white;
+  box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
 }
-.selectImg {
-  margin-top: 40px;
+
+.card__Img {
   margin-bottom: 15px;
 }
-.selectTitle {
+.card__title {
   font-weight: 700;
   font-size: 42px;
   line-height: 63px;
   letter-spacing: 0.8px;
-  color: #ffffff;
+  color: #323232;
 }
-.selectText {
+.card__icon {
+  fill: #f78434;
+}
+.card__text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.69;
-  text-align: center;
+  line-height: 27px;
   letter-spacing: 1.15px;
-  color: #ffffff;
-  display: inline-block;
-  width: 364px;
-  margin-top: 1px;
+  color: #323232;
   margin-bottom: 25px;
 }
-.selectBtn {
+.unBtn {
   width: 172px;
   height: 58px;
-  background-color: white;
   border-radius: 29px;
-  padding: 18px 39px;
+  background-color: white;
+  color: #f78434;
   font-weight: 700;
   font-size: 16px;
-  line-height: (24/16) px;
-  color: #f78434;
+  line-height: 1.4;
+  padding: 18px 39px;
 }
-.Seller {
+
+.whoDo__card:hover {
+  background-color: #f78434;
+  .card__icon {
+    fill: white;
+  }
+  .card__title {
+    color: white;
+  }
+  .card__text {
+    color: white;
+  }
 }

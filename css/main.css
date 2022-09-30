@@ -164,7 +164,7 @@ a {
 .weProvide__images {
   display: flex;
   -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 
 .image_1 {
@@ -264,7 +264,8 @@ a {
 }
 
 .statUsingContent {
-  background: url(/img/testimonials/Oval.svg) no-repeat bottom -152px left -152px, url(/img/testimonials/Design\ element.svg) no-repeat top -110px right -100px;
+  background: url(/img/testimonials/Oval.svg) no-repeat bottom -152px left -152px,
+    url(/img/testimonials/Design\ element.svg) no-repeat top -110px right -100px;
   padding-left: 96px;
   padding-top: 92px;
   color: white;
@@ -338,8 +339,19 @@ a {
   z-index: 250;
 }
 
-.buyersSelect {
-  display: none;
+.whoDo {
+  padding-top: 0;
+  padding-bottom: 50px;
+  position: relative;
+}
+.whoDo::before {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  background-color: #f5f6fa;
+  top: -100%;
+  width: 100%;
+  height: 160%;
 }
 
 .whoDo__head {
@@ -369,53 +381,126 @@ a {
   width: 1110px;
   display: flex;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
+  justify-content: stretch;
 }
 
-.Buyers {
+.whoDo__card {
   display: flex;
   flex-direction: column;
-  width: 540px;
-  height: 385px;
   align-items: center;
+  width: 540px;
+  height: 365px;
+  padding: 40px 88px;
+  text-align: center;
   border-radius: 10px;
-  background-color: #f78434;
+  background-color: white;
+  box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
 }
 
-.selectImg {
-  margin-top: 40px;
+.card__Img {
   margin-bottom: 15px;
 }
 
-.selectTitle {
+.card__title {
   font-weight: 700;
   font-size: 42px;
   line-height: 63px;
   letter-spacing: 0.8px;
-  color: #ffffff;
+  color: #323232;
 }
 
-.selectText {
+.card__icon {
+  fill: #f78434;
+}
+
+.card__text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.69;
-  text-align: center;
+  line-height: 27px;
   letter-spacing: 1.15px;
-  color: #ffffff;
-  display: inline-block;
-  width: 364px;
-  margin-top: 1px;
+  color: #323232;
   margin-bottom: 25px;
 }
 
-.selectBtn {
+.unBtn {
   width: 172px;
   height: 58px;
-  background-color: white;
   border-radius: 29px;
-  padding: 18px 39px;
+  background-color: white;
+  color: #f78434;
   font-weight: 700;
   font-size: 16px;
+  line-height: 1.4;
+  padding: 18px 39px;
+}
+
+.whoDo__card:hover {
+  background-color: #f78434;
+}
+.whoDo__card:hover .card__icon {
+  fill: white;
+}
+.whoDo__card:hover .card__title {
+  color: white;
+}
+.whoDo__card:hover .card__text {
+  color: white;
+}
+
+.whyChooseUs {
+  margin-top: 63px;
+  margin-bottom: 112px;
+}
+
+.whyChooseUs__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4761904762 px;
+  letter-spacing: 0.8px;
+  color: #323232;
+  margin-bottom: 58px;
+  text-align: center;
+}
+
+.whyChooseUs__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reasons__icon {
+  fill: #58bebf;
+  position: relative;
+}
+.reasons__icon::after {
+  display: block;
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  position: absolute;
+}
+
+.reasons__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
   line-height: 1.5 px;
-  color: #f78434;
-}/*# sourceMappingURL=main.css.map */
+  letter-spacing: 0.5px;
+  color: #323232;
+}
+
+.reasons__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6875 px;
+  letter-spacing: 1.15px;
+  color: #323232;
+} /*# sourceMappingURL=main.css.map */
