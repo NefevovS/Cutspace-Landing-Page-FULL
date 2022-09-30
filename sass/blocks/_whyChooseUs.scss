@@ -15,24 +15,29 @@
 .whyChooseUs__row {
   display: flex;
   justify-content: space-between;
+  column-gap: 35px;
 }
 .reasons {
   display: flex;
   flex-direction: column;
+
   align-items: center;
 }
 .reasons__icon {
-  fill: #58bebf;
-  position: relative;
-  &::after {
-    content: "";
-    width: 70px;
-    height: 70px;
-    background-color: black;
-    position: absolute;
+  circle {
+    fill: rgba(88, 190, 191, 0.2);
+  }
+  path {
+    fill: #58bebf;
+  }
+  ellipse {
+    fill: #58bebf;
   }
 }
+
 .reasons__title {
+  margin-top: 15px;
+  margin-bottom: 2px;
   text-align: center;
   font-weight: 700;
   font-size: 28px;

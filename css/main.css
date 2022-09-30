@@ -164,7 +164,7 @@ a {
 .weProvide__images {
   display: flex;
   -moz-column-gap: 32px;
-  column-gap: 32px;
+       column-gap: 32px;
 }
 
 .image_1 {
@@ -264,8 +264,7 @@ a {
 }
 
 .statUsingContent {
-  background: url(/img/testimonials/Oval.svg) no-repeat bottom -152px left -152px,
-    url(/img/testimonials/Design\ element.svg) no-repeat top -110px right -100px;
+  background: url(/img/testimonials/Oval.svg) no-repeat bottom -152px left -152px, url(/img/testimonials/Design\ element.svg) no-repeat top -110px right -100px;
   padding-left: 96px;
   padding-top: 92px;
   color: white;
@@ -381,7 +380,7 @@ a {
   width: 1110px;
   display: flex;
   -moz-column-gap: 30px;
-  column-gap: 30px;
+       column-gap: 30px;
   justify-content: stretch;
 }
 
@@ -466,6 +465,8 @@ a {
 .whyChooseUs__row {
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
 }
 
 .reasons {
@@ -474,20 +475,19 @@ a {
   align-items: center;
 }
 
-.reasons__icon {
-  fill: #58bebf;
-  position: relative;
+.reasons__icon circle {
+  fill: rgba(88, 190, 191, 0.2);
 }
-.reasons__icon::after {
-  display: block;
-  content: "";
-  width: 70px;
-  height: 70px;
-  background-color: black;
-  position: absolute;
+.reasons__icon path {
+  fill: #58bebf;
+}
+.reasons__icon ellipse {
+  fill: #58bebf;
 }
 
 .reasons__title {
+  margin-top: 15px;
+  margin-bottom: 2px;
   text-align: center;
   font-weight: 700;
   font-size: 28px;
@@ -503,4 +503,4 @@ a {
   line-height: 1.6875 px;
   letter-spacing: 1.15px;
   color: #323232;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
