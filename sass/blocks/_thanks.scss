@@ -5,15 +5,16 @@
 .thanks__header--row {
   display: flex;
   justify-content: space-between;
-  column-gap: 260px;
   align-items: center;
 }
+
 .thanks__header__title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.48;
   letter-spacing: 0.8px;
   color: #323232;
+  max-width: 452px;
 }
 .customerTextWrapper {
   padding: 31px 29px;
@@ -24,6 +25,7 @@
   line-height: 1.69;
   letter-spacing: 1.15px;
   color: #606060;
+  max-width: 398px;
 }
 .thanks__cards {
   margin-top: 58px;
@@ -32,11 +34,38 @@
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
+  position: relative;
+}
+.thanks__cards--row::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  background: url(/img/testimonials/Shape.svg);
 }
 .customer__card {
+  &:hover {
+    box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+  }
+  &:hover .customer__town {
+    color: rgba(247, 132, 52, 1);
+  }
 }
+
 .customer__img {
   border-radius: 5px 5px 0px 0px;
+  position: relative;
+  &:hover::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-image: url(/img/logo/Play\ btn.png);
+  }
 }
 .customer__img img {
   display: block;
