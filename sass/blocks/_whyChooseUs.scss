@@ -20,8 +20,18 @@
 .reasons {
   display: flex;
   flex-direction: column;
-
   align-items: center;
+  &:hover .reasons__icon {
+    circle {
+      fill: #f78434;
+    }
+    path {
+      fill: white;
+    }
+    ellipse {
+      fill: white;
+    }
+  }
 }
 .reasons__icon {
   circle {

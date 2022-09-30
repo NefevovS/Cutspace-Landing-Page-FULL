@@ -1,0 +1,66 @@
+.thanks {
+  padding: 59px 0;
+}
+
+.thanks__header--row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 260px;
+  align-items: center;
+}
+.thanks__header__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.48;
+  letter-spacing: 0.8px;
+  color: #323232;
+}
+.customerTextWrapper {
+  padding: 31px 29px;
+}
+.thanks__header__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.69;
+  letter-spacing: 1.15px;
+  color: #606060;
+}
+.thanks__cards {
+  margin-top: 58px;
+}
+.thanks__cards--row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.customer__card {
+}
+.customer__img {
+  border-radius: 5px 5px 0px 0px;
+}
+.customer__img img {
+  display: block;
+}
+.customer__review {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.69;
+  letter-spacing: 1.15px;
+  color: #323232;
+}
+.customer__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: (27/18) px;
+  letter-spacing: 0.6px;
+  color: #323232;
+  margin-top: 23px;
+  margin-bottom: 1px;
+}
+.customer__town {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.69;
+  letter-spacing: 1.15px;
+  color: #58bebf;
+}
