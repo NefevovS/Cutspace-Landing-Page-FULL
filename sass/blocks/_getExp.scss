@@ -1,0 +1,75 @@
+.getExp {
+  background-image: url(/img/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.getExp__row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.getExp__content {
+  padding-top: 211px;
+  padding-bottom: 55px;
+  padding-left: 165px;
+}
+.getExp__title {
+  max-width: 359px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 62px;
+  /* or 148% */
+
+  letter-spacing: 0.8px;
+
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.getExp__text {
+  max-width: 342px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 169% */
+
+  letter-spacing: 1.15px;
+  margin-bottom: 30px;
+
+  & p {
+    color: #ffffff;
+  }
+}
+
+.getExp__img {
+  margin-right: 264px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 743px;
+    height: 371px;
+    background-image: url(/img/Oval.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 50%;
+    z-index: 2;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 478px;
+    height: 547px;
+    background-image: url(/img/girl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 55%;
+    bottom: 0;
+    z-index: 5;
+    overflow: hidden;
+  }
+}
+.getExp__img > img {
+  display: block;
+}
